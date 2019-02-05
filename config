@@ -1,10 +1,3 @@
-# i3 config file (v4)
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
-exec xinput set-prop 11 310 1
-exec xinput set-prop 11 318 1
-
 #Bordo finestre non flottanti
 hide_edge_borders both
 
@@ -42,10 +35,10 @@ bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindcode $mod+44 focus left
-bindcode $mod+45 focus down
-bindcode $mod+46 focus up
-bindcode $mod+47 focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindcode $mod+113 focus left
@@ -54,10 +47,10 @@ bindcode $mod+111 focus up
 bindcode $mod+114 focus right
 
 # move focused window
-bindcode $mod+Shift+44 move left
-bindcode $mod+Shift+45 move down
-bindcode $mod+Shift+46 move up
-bindcode $mod+Shift+47 move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindcode $mod+Shift+113 move left
@@ -66,10 +59,10 @@ bindcode $mod+Shift+111 move up
 bindcode $mod+Shift+114 move right
 
 # split in horizontal orientation
-bindcode $mod+43 split h
+bindsym $mod+x split h
 
 # split in vertical orientation
-bindcode $mod+55 split v
+bindsym $mod+y split v
 
 # enter fullscreen mode for the focused container
 bindcode $mod+41 fullscreen toggle
